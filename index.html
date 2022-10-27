@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>New Tab</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patrick Hand">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	  $(".img_link").click(function(){
+		$("body").fadeOut(500);
+	  });
+	});
+	</script>
+	<style>
+	body, html{
+	font-family: Patrick Hand;
+	font-size: 25px;
+	color: #CFCFCF;
+	height: 100%;
+	margin: 0;
+	animation: fadein cubic-bezier(.6,-0.28,.74,.05) 350ms;
+	}
+	.bg{
+		background-image: url('https://img.guildedcdn.com/ContentMediaGenericFiles/44b49ccf7876dadb3b140e8547fba649-Full.webp?');
+		height: 100%;
+		background-position:center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.img_link{
+		background-color: #0c0c0c;
+		border: 3px solid #0c0c0c;
+		border-radius: 3px;
+		width:48px;
+		height:48px;
+	}
+	.img_link:hover{
+		animation: colorAni ease-in 200ms;
+		animation-iteration-count: 1;
+		animation-fill-mode: forwards;
+	}
+	.a:link{
+		color: rgba(0, 0, 0, 0);
+	}
+	.texta{
+		position: fixed;
+		width: 100%;
+		bottom: 105px;
+		text-align: center;
+	}
+	.weatherwidgetpos{
+		position: fixed;
+		width: 100%;
+		bottom: 0px;
+		animation: fadein ease-in 1000ms;
+		animation-iteration-count: 1;
+		animation-fill-mode: forwards;
+	}
+	.weirdassclock{
+		opacity: 0;
+		transition: 200ms ease-out;
+	}
+	.weirdassclock:hover{
+		opacity: 1;
+	}
+	@keyframes fadein{
+		0% {opacity:0;}
+		100% {opacity:1;}
+	}
+	@keyframes colorAni{
+	0% {background-color: #0c0c0c;
+		border: 3px solid #0c0c0c;}
+	100% {border: 3px solid #94513e;
+		background-color: #94513e;}
+	}
+	@keyframes fadeout{
+	0%{opacity: 0}
+	100%{opacity: 1}
+	}
+	@keyframes fadein03{
+		0% {opacity:0.3;}
+		100% {opacity:1;}
+	.common_text{}
+	</style>
+	</head>
+	<body>
+		<div class="bg">
+			<div class="texta">
+			<div class="weirdassclock">
+				<script src="https://cdn.logwork.com/widget/text.js"></script>
+				<a href="https://logwork.com/current-time-in-quito-ecuador-pichincha" class="clock-widget-text" data-width="671" data-timezone="America/Guayaquil" data-language="en" data-textcolor="#c7c7c7" data-digitscolor="#c7c7c7">Quito, Ecuador</a>
+			</div>
+			<p class="common_text">Most Visited Websites</p>	
+				<a href="https://www.youtube.com/">
+					<img id="youtube" class="img_link" src="https://cdn.discordapp.com/attachments/986676556799823945/1034985432229884016/output-onlinepngtools.png">
+				</a>
+				<a href="https://www.nicovideo.jp/">
+					<img id="niconico" class="img_link" src="https://cdn.discordapp.com/attachments/986676556799823945/1035086088164880404/YmxSTcsd_400x400.jpg">
+				</a>
+				<a href="https://www.reddit.com/">
+					<img id="reddit" class="img_link" src="https://cdn.discordapp.com/attachments/986676556799823945/1034992301409316905/redd.png">
+				</a>
+				<a href="https://vocadb.net/">
+					<img id="vocadb" class="img_link" src="https://cdn.discordapp.com/attachments/986676556799823945/1034991904372297768/index.png">
+				</a>
+				<a href="https://mikudb.moe/">
+					<img id="mikudb" class="img_link" src="https://cdn.discordapp.com/attachments/986676556799823945/1034993431933632532/mikudb.png">
+				</a>
+				<a href="https://nyaa.si/">
+					<img id="nyaa" class="img_link" src="https://cdn.discordapp.com/attachments/986676556799823945/1034994076782698586/unknown.png">
+				</a>
+				<a href="https://vk.com/pages?oid=-60027733&p=%D0%9C%D0%B5%D0%BD%D1%8E%20%20%2F%20Menu">
+					<img id="doujin_club" class="img_link" src="https://cdn.discordapp.com/attachments/986676556799823945/1034993775967219712/nowCsSYjrFlgt6kXhLrckjmm7KzmcFXOOC7INdDSepA0mTXEdxSDTPwi7WbNajh_r0jWjz4ZRjxIiZbsVqF_IyG7.jpeg	">
+				</a>
+				<a href="https://anilist.co/">
+					<img id="anilist" class="img_link" src="https://cdn.discordapp.com/attachments/986676556799823945/1034993968854876270/anilist.co.png">
+				</a>
+				<a href="https://anichart.net/">
+					<img id="anichart" class="img_link" src="https://anichart.net/favicon.ico">
+				</a>
+				<a href="https://mail.google.com/mail/u/0/">
+					<img id="gmail" class="img_link" src="https://cdn.discordapp.com/attachments/986676556799823945/1035082420346687518/gmail-3.png">
+				</a>
+				<a href="https://discord.com/app/">
+					<img id="discord" class="img_link" src="https://cdn.discordapp.com/attachments/986676556799823945/1034994201550655558/index.png">
+				</a>
+			</div>
+			<div class="weatherwidgetpos">
+<a class="weatherwidget-io" href="https://forecast7.com/en/0d09n76d89/nueva-loja/" data-label_1="WEATHER" data-label_2="[REDACTED] - Ecuador" data-font="Noto Sans" data-icons="Climacons Animated" data-theme="dark" data-basecolor="#0c0c0c" data-accent="rgba(21, 21, 21, 0.24)" data-textcolor="#c7c7c7" data-cloudcolor="#898989" >WEATHER [REDACTED] - Ecuador</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+			</div>
+		</div>
+	</body>
+</html>
